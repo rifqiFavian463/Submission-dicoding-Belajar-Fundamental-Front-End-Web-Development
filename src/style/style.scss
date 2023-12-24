@@ -1,0 +1,333 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  background-color: #f8e367;
+}
+
+.slick-track {
+  display: flex;
+  height: 400px;
+}
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slider {
+  width: 95%;
+  display: flex;
+}
+.slick-arrow {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 30px;
+}
+
+.card-comic {
+  width: 270px;
+  height: 350px;
+  border-radius: 15px;
+  overflow-y: hidden;
+  background-color: white;
+}
+.card-comic img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.card-comic .card-description {
+  padding-bottom: 0 !important;
+  height: 100px;
+}
+
+.card-comic .more-info .fa-arrow-right {
+  border: 2px solid rgb(34, 211, 238);
+  padding: 5px 6px;
+  border-radius: 50%;
+}
+.popular-comic-desc {
+  width: 230px;
+  display: inline-block;
+  margin-left: 70px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.popular-comic-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 28px;
+  margin-left: 70px;
+  margin-top: 3em;
+}
+.recommend-comic-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 28px;
+  margin-right: 70px;
+  margin-top: 3em;
+}
+.recommend-comic-desc {
+  width: 230px;
+  display: inline-block;
+  margin-right: 70px;
+  align-self: end;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.card-comic .card-description .type {
+  overflow-y: hidden;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  font-weight: 600;
+  background-color: #f58634;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 4px 5px;
+  letter-spacing: 1.5px;
+}
+.card-comic .card-description .title {
+  font-weight: 800;
+  font-size: 18px;
+  height: 60px;
+}
+
+.card-comic .card-description .title::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.card-comic .card-description .title::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1ex;
+}
+
+.card-comic .card-description .title::-webkit-scrollbar-thumb {
+  background: #f58634;
+  border-radius: 1ex;
+}
+.modal .modal-body::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  margin-right: 10px;
+}
+
+.modal .modal-body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1ex;
+  margin-right: 10px;
+}
+
+.modal .modal-body::-webkit-scrollbar-thumb {
+  background: #f58634;
+  border-radius: 1ex;
+  margin-right: 10px;
+}
+.card-comic .more-info {
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 10px;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-top: 10px;
+  border-radius: 40px;
+}
+
+.modal .modal-body .container img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.modal .modal-body .container .title {
+  font-size: 20px;
+  font-weight: 800;
+}
+.modal .modal-body .container .main-info .col span {
+  display: inline-block;
+  padding: 3px;
+  width: 100%;
+  color: #828282;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.modal .modal-body .container .genre span {
+  padding: 8px 15px;
+  width: 140px;
+  background-color: #f58634;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 18px;
+  letter-spacing: 1px;
+}
+.modal .modal-body .container .chapter-list span {
+  padding: 8px 15px;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 18px;
+  border: 1px solid #b6b6b6;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.modal .modal-body .container .chapter-list span:hover {
+  background-color: #f58634;
+  color: white;
+  border: 1px solid #f58634;
+}
+.modal .modal-body .container .desc {
+  font-size: 14px;
+  text-align: center;
+}
+.modal .modal-header {
+  margin: 0 30px;
+}
+.modal .modal-footer {
+  margin: 0 30px;
+}
+.btn-word-close {
+  background-color: #f58634;
+  border: none;
+}
+.all-comic {
+  margin-top: 5em;
+}
+.all-comic .search-container {
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 400px;
+  padding: 3px;
+  padding-left: 30px;
+  margin-top: 3em;
+}
+.all-comic .search-container input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.all-comic .search-container input::placeholder {
+  color: black;
+}
+.all-comic .search-container .search-button {
+  background-color: rgb(34, 211, 238);
+  border-radius: 0 30px 30px 0;
+  padding: 12px;
+  border: none;
+  color: black;
+}
+.all-comic .container-list {
+  width: 100%;
+  overflow-y: scroll;
+  height: 400px;
+}
+.all-comic .container-list .card-comic {
+  padding: 0 !important;
+}
+.all-comic .container-list::-webkit-scrollbar {
+  height: 20px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.all-comic .container-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1ex;
+  margin-right: 10px;
+}
+
+.all-comic .container-list::-webkit-scrollbar-thumb {
+  background-color: rgb(34, 211, 238);
+  border-radius: 1ex;
+  margin-right: 10px;
+}
+.all-comic .all-comic-title {
+  height: 119px;
+}
+
+.all-comic .all-comic-title span {
+  font-weight: 800;
+  font-size: 28px;
+  display: inline-block;
+  width: 190px;
+}
+.all-comic .all-comic-title img {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+footer {
+  border-top: 2px solid white;
+}
+footer .container .title-footer {
+  font-size: 20px;
+  font-weight: 800;
+}
+footer .container .title-footer span {
+  color: #f58634;
+}
+footer .container .information-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .container span {
+  font-size: 14px;
+}
+body::-webkit-scrollbar {
+  height: 20px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 1ex;
+  margin-right: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(34, 211, 238);
+  border-radius: 1ex;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .all-comic .all-comic-title {
+    height: 157px;
+  }
+  .all-comic .all-comic-title img {
+    right: -15px;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .all-comic .search-container {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 300px;
+    padding: 3px;
+    padding-left: 30px;
+  }
+  .all-comic .all-comic-title {
+    height: 150px;
+  }
+  .all-comic .all-comic-title img {
+    right: 5em;
+    bottom: 0;
+  }
+}

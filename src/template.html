@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Manga</title>
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <hero-section></hero-section>
+    <div class="d-flex flex-column container">
+      <div class="error-notification"></div>
+
+      <!-- Popular Comic -->
+      <h4 class="popular-comic-title fw-bold overflow-hidden text-start" id="popular">Popular Comic</h4>
+      <span class="popular-comic-desc text-start">Penggambaran ikonik dari manga populer yang mendebarkan.</span>
+      <div class="container position-relative d-flex justify-content-center mt-5">
+        <div class="prev prev-popular ms-2 me-2">
+          <i class="fa-solid fa-angle-left fa-2xl"></i>
+        </div>
+        <div class="slider popular-comic"></div>
+        <div class="next next-popular ms-2 me-2">
+          <i class="fa-solid fa-angle-right fa-2xl"></i>
+        </div>
+      </div>
+
+      <!-- Recommend Comic -->
+      <h4 class="recommend-comic-title fw-bold overflow-hidden text-end" id="recommended">Recommended Comic</h4>
+      <span class="recommend-comic-desc text-end">Pilihan manga unggulan untuk pengalaman baca yang luar biasa.</span>
+      <div class="container position-relative d-flex justify-content-center mt-5">
+        <div class="prev prev-recommend ms-2 me-2">
+          <i class="fa-solid fa-angle-left fa-2xl"></i>
+        </div>
+        <div class="slider recommend-comic"></div>
+        <div class="next next-recommend ms-2 me-2">
+          <i class="fa-solid fa-angle-right fa-2xl"></i>
+        </div>
+      </div>
+
+      <div class="all-comic d-flex flex-column align-items-center" id="all">
+        <div class="grid row justify-content-center justify-content-md-between w-100">
+          <div class="col-md-6 search-container d-flex justify-content-between column-gap-2 align-self-center">
+            <input type="text" class="input-search" placeholder="Judul komik.." />
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+          </div>
+          <div class="col-md-4 all-comic-title d-flex justify-content-center justify-content-md-end position-relative">
+            <span class="text-center text-md-end mt-4 mt-md-0">Our Feature Manga</span>
+            <img src="images/shade-5df731d1.png" alt="shade" />
+          </div>
+        </div>
+
+        <div class="container-list row column-gap-3 row-gap-5 justify-content-around mt-5"></div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable"></div>
+    </div>
+    <footer class="mt-5">
+      <div class="container pt-5">
+        <div class="row grid row-gap-3 text-center text-md-start">
+          <div class="col-md d-flex flex-column row-gap-2">
+            <span class="title-footer">Mangaku<span>.</span></span>
+          </div>
+          <div class="col-6 col-md d-flex flex-column row-gap-2">
+            <span class="information-title">Contact</span>
+            <span class="mt-2"><i class="fa-solid fa-location-dot"></i> 1231 south Ohio, FL 3313</span>
+            <span><i class="fa-solid fa-phone"></i> 351-134-322</span>
+            <span><i class="fa-solid fa-envelope"></i> mangaku-company.gmail.com</span>
+          </div>
+          <div class="col-6 col-md d-flex flex-column row-gap-2">
+            <span class="information-title">Account</span>
+            <span class="mt-2"><i class="fa-brands fa-instagram"></i> Instagram</span>
+            <span><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
+            <span><i class="fa-brands fa-twitter"></i> Twitter</span>
+          </div>
+          <div class="col-6 col-md d-flex flex-column row-gap-2">
+            <span class="information-title">Web Service</span>
+            <span class="mt-2"><i class="fa-solid fa-user-group"></i> About us</span>
+          </div>
+          <div class="col-6 col-md d-flex flex-column row-gap-2">
+            <span class="information-title">Terms & Policy</span>
+            <span class="mt-2"><i class="fa-solid fa-link"></i> Safety Privacy & Terms</span>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-5 mb-5">
+          <div class="col text-center">Copyright &copy 2023 Mangaku, Inc. All rights reserved</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
